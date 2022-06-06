@@ -1,0 +1,312 @@
+#root,  html{
+    background: rgb(12, 12, 231);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    body{ 
+        text-align: center;
+        background: #6a6f78;
+        color: wheat;
+        
+        header {
+            background: blue;
+            border: solid;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+
+            .header__logo__container {
+                img {
+                    width: 5rem;
+                    margin: 2rem 2rem;
+                }
+            }
+
+            .header__nav {
+                margin: 2rem auto;
+                display: flex;
+                flex-wrap: wrap;
+                .nav__link {
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    padding: 2rem;
+                    color: wheat;
+                }
+            }    
+
+            .caetWidgetContainer{
+                display: flex;
+                margin: 4rem 0 ;
+                .header__cartWidget {
+                    margin: 0 0.3rem ;
+                    color: wheat;
+                }
+                .numeroPositivo{
+                    color: rgb(6, 255, 6);
+                }
+                .numeroCero{
+                    color: red;
+                }
+            }
+
+            .iconsUser{
+                color: red;
+                margin: 4rem 2rem 4rem 1rem ;
+            }
+            .iconsUser2{
+                color: rgb(38, 175, 38);
+                margin: 4rem 2rem 4rem 1rem ;
+            }
+        }
+
+        main {
+            background: rgba(58, 55, 252, 0.801);
+            width: 90%;
+            margin: 1rem auto;
+            height: 100%;
+            padding: 2rem 0 2rem 0;
+            align-items: center;
+
+            .sectionCarritoContainer{
+                display: flex;
+                margin: 2rem 0;
+
+                .cardCarritoContainer{
+                    border: solid black ;
+                    width: 18rem;
+                    height: 22rem;
+                    padding: 1rem;
+                    background: rgb(82, 81, 80);
+                    margin:  auto;
+
+                    .img{
+                        img {
+                            margin: 0.5rem;
+                            width: 13rem;
+                            height: 10rem;
+                        }
+                    }
+
+                    p {
+                        padding: 0.5rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .sectionButtonCart{
+                button {
+                    margin: 0.5rem;
+                    padding: 0.3rem;
+                    border-radius: 0.3rem;
+                    background: blue;
+                    color: wheat;
+                    transition: all 1s;
+                    border: solid bl;
+
+                    &:hover{
+                        background: green;
+                        color: black;
+                        transition: all 1s;
+                    }
+                }
+            }
+
+            .cardDetailContainer{
+                border: solid black ;
+                padding: 1rem;
+                background: rgb(82, 81, 80);
+                margin:  1rem;
+
+                h3{
+                    margin: 0.5rem;
+                    font-size: 2rem;
+                }
+
+                .imgYDetalle{
+                    display: flex;
+                    margin: auto;
+
+                    img {
+                        margin: auto;
+                        width: 25rem;
+                    }
+
+                    .detalleYBtn{
+                        margin: 1rem;
+
+                        .detalle{
+                            margin: 3rem 0 3rem 0;
+                        }
+
+                        .buttonContainer{
+                            .button {
+                                margin: 1rem  0;
+                                padding: 0.3rem;
+                                border-radius: 0.3rem;
+                                background: blue;
+                                color: wheat;
+                                transition: all 1s;
+                                border: solid bl;
+
+                                &:hover{
+                                    background: green;
+                                    color: white;
+                                    transition: all 1s;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    padding: 0.5rem;
+                    font-size: 1.2rem;
+                }
+
+                .itemCountContainer{
+                    margin-top: 1.2rem;
+
+                    p{
+                        color: white;
+                    }
+
+                    .countContainer {
+                        padding: 0.5rem;
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        button {
+                            padding: 0.2rem;
+                            background: black;
+                            color: white;
+                            font-size: 1.2rem;
+                            border-radius: 1rem;
+
+                            &:hover{
+                                border: solid 1px;
+                                transition: all 1s;
+                            }
+                        }
+                    }
+
+                    .botonComprar {
+                        button {
+                            margin: 1rem  0;
+                            padding: 0.2rem;
+                            border-radius: 0.2rem;
+                            background: blue;
+                            color: wheat;
+                            transition: all 1s;
+                            border: solid bl;
+
+                            &:hover{
+                                background: green;
+                                color: white;
+                                transition: all 1s;
+                            }
+                        }
+                    }
+                }
+
+                // .modal {
+                //     position: fixed;
+                //     top: 0;
+                //     left: 0;
+                //     right: 0;
+                //     bottom: 0;
+                //     background: rgba(24, 2, 2, 0.849);
+
+                //     .contenedorDentroModal {
+                //         margin-top: 15rem;
+                //     }
+
+                //     .buttonClose {
+                //         background: rgb(255, 255, 255);
+                //         color: rgb(1, 13, 24);
+                //         padding: 0.3rem;
+                //         margin: 0.5rem;
+                //         font-weight: 800;
+                //         transition: all 1s;
+
+                //         &:hover {
+                //             background: green;
+                //             color: aliceblue;
+                //             transition: all 1s;
+                //         }
+                //     }
+                // }
+            }
+
+            .itemListContainer {
+                display: flex;
+                flex-wrap: wrap;
+
+                .cardProductContainer {
+                    border: solid black ;
+                    width: 13rem;
+                    margin: 1rem;
+                    background: rgb(82, 81, 80);
+
+                    h3{
+                        margin: 0.5rem;
+                    }
+
+                    .img{
+                        img {
+                            margin: 0.5rem;
+                            width: 10rem;
+                            height: 8rem;
+                        }
+                    }
+
+                    p {
+                        padding: 0.5rem;
+                    }
+
+                    .button {
+                        background: blue;
+                        color: wheat;
+                        padding: 0.5rem;
+                        border-radius: 0.5rem;
+                        margin: 0.5rem;
+                        transition: all 1s;
+                        &:hover{
+                            background-color: rgb(40, 207, 40);
+                            color: rgb(0, 0, 0);
+                            transition: all 1s;
+                        }
+                    }
+                }
+            }
+
+            .botonDelete{
+                padding: 0.3rem;
+                background: red;
+                color: wheat;
+                transition: all 1s;
+                border-radius: 0.5rem;
+                &:hover{
+                    background: green;
+                    border-radius: 0.7rem;
+                    transition: all 1s;
+                }
+            }
+            
+        }
+
+        footer {
+            color: wheat;
+            background: rgba(172, 218, 219, 0.644);
+            padding: 5rem;
+            margin: 5rem 0 0 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+

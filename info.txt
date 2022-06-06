@@ -1,0 +1,198 @@
+HOOK : Funciones que extienden la funcionalidad del mismocomponente
+
+    1 -  Se ejecutan adentro de un componente
+    2 -  No pueden  estar
+
+
+    Ciclo de vida :
+
+        mount
+        update 
+            -   El estado cambia
+            -   Su padre se actualizo
+            -   Si los props cambian
+
+
+    useEffect( () => {
+        console.log( 'Hubo un efecto' )
+    } [ variable ] ) 
+
+    useEffect( () => {
+        console.log( 'Pidiendo Productos ...')
+        setTimeout( () => {
+            console.log( 'recibo productos!')
+            console.log( productosIniciales )
+        }, 2000)
+    }, [ compra ] )
+
+
+
+
+const arr = [ 1, 2, 3 ]
+
+    arr.forEach( ( e, indice ) => {})
+
+    const r = arr.,map( ( e, indice ) => {
+        return ;
+    })
+
+            <ul>
+                {productos.map( ( producto ) =>{
+                    return <li key={producto.id} >{producto.nombre} </li>    // key : para que react siga el orden del array ( es como un id interno)
+                }) }
+            </ul>
+
+Promise :      // Para registrar operaciones asincronas  ( son Objetos)
+
+    cosnt promesa = fetch()      
+
+    const promesa = new promise( ( res ) =>{
+        res( ? )
+    })
+
+        promesa
+                .then()   // Si esta todo bien
+
+        promesa
+                .catch()  // Si esta todo mal
+
+        caches.open( )    //Otro ejemplo
+                .then( ( contenido ) => {
+                    console.log( "Salio todo bien" )
+                })
+                .catch( ( error ) {
+                    console.log( "Salio todo mal" )
+                })
+                    
+
+FETCH    =>  ES UNA PROMESA , ASINCRONICO
+
+HTTP :
+
+    Cliente / REQUEST
+
+        URL/IP:  Ladireccion del servidor / Recurso
+                METODO/VERBO : get -post - put - patch - delete - head - options    / 
+                BODY : La data que queres enviar ( Si aplica )
+                HEADERS : Informacion de configuracion / matadata
+                VERSION : 1.1
+
+
+    Servidor / RESPONSE
+
+        CODIGOs :   100( Informativos ) - 200( respuestas correctas ) - 300( Redirecciones ) - 400( Error del Cliente ) - 500( Errores del servidor )      /  https://restapitutorial.com/httpstatuscodes.html
+        MENSAJE :   Mensaje que acompaña al codigo
+        BODY :   La data que queres enviar ( Si aplica )
+        HEADERS : Informacion de configuracion / matadata
+        VERSION : 1.1
+
+fetch('http://google.com')
+
+    API WEB :
+
+    API REST :                                                                                                  https://github.com/public-api-lists/public-api-lists
+
+        http://mercadopago.com/api/users - get
+        http://mercadopago.com/api/ventas - post
+
+
+
+S P A : Single Page Apliqueishon                           => NPM I REACT-ROUTER-DOM
+
+    Link : No actualiza la pagina al  hacer click
+
+SSR : Server Side Rendering
+
+
+
+
+Orden :
+
+    /src
+        /back
+        /front
+            |_ui
+                |_Layout.jsx
+                    |_Header.jsx
+                    |_Footeer.jsx
+                    |_Main.jsx
+                    |_App.jsx
+                |_paginas
+                    |_Home.jsx
+                    |_Productos.jsx
+                    |_Categorias.jsx
+                    |_Carrito.jsx
+                |_utils
+                    |_CartWidget.jsx
+                    |_NavBar.jsx
+                |_Containers.jsx
+            
+
+
+FILTER  :    Array.filter( (elemento, indice, array ) => { return elemento.id})
+FIND   :    // const producto = productos.find ( ( resultado ) =>  resultado.id == id)
+
+----------------------------------------
+const handleChange = ( e ) => {
+    console.log( e.target.value )
+}
+<input type='text' onChange={ handleChange } />
+---------------------------------------
+
+
+
+
+
+    // const handleClick = ( e ) => {
+    //     //e.preventDefault()
+    //     //e.stopPropagation()
+    // console.log( e.target.value , 'Click')
+    // }
+
+    // const handleChange = ( e ) => {
+    //     console.log( e.target.name)    //type
+    // }
+
+    // const handleFocus = ( e ) => {
+    //     console.log( 'Focus' )
+    // }
+
+    // const handleBlur = ( e ) => {
+    //     console.log( 'Blur' )
+    // }
+
+    
+    // const handleSubmit = ( e ) => {
+    //     e.preventDefault()
+    //     console.log( 'Submit' )
+    // }
+
+
+
+
+==================================================
+
+  BASE DE DATOS :
+
+             // getDocs() : Trae un grupo de documentos, mas de uno segurop
+            // getDocs( collection ) : Trae todo lo que esta en el collection
+            // getDocs( query ) : Trae algunos documentos dependiendo el query( filtro )
+
+
+
+
+MD : MarkDown
+
+BUILD : Post procesar el codigo fuente para minificarlo, optimizarlo, etc
+DEPLOY : Desplegar el  build de una aplicacion de una maquina host ( servidor)
+
+
+
+                HOST
+protocolo : SSH
+
+www.netlify.com => para probar
+www.vercel.com  *   argentino
+www.heroku.com  **
+
+
